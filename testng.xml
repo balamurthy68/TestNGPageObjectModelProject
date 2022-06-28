@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd"> -->
+<suite parallel="false" name="Suite12May">
+  <!--
+  <groups>
+    <run>
+      <include name="functest"/>
+    </run>
+  </groups>
+  -->
+  <test name = "26MayTests">
+     <parameter name="p_browser" value="chrome"/>
+     <parameter name="p_url" value="https://the-internet.herokuapp.com/login"/>  
+     <parameter name="p_username" value="toms" />
+     <parameter name="p_password" value="SuperSecretPassword!"/>
+    
+   <classes>
+     
+      <class name="TestCases.LandingPageTestCase"/> 
+  	  
+  	 </classes>
+  </test>
+  
+</suite> <!-- Suite -->
